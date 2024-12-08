@@ -3,10 +3,18 @@
 document.getElementById('btn-login').addEventListener('click', function(event){
 
     event.preventDefault();
-    console.log('click on the btn');
 
     const phoneNumber = document.getElementById('phone-number').value;
-    console.log(phoneNumber);
+    const pinNumber = document.getElementById('pin-number').value;
+    // console.log(phoneNumber, pinNumber);
+
+    if(phoneNumber=== '5' && pinNumber=== '1234'){
+        console.log('log in success');
+        window.location.href = '/home.html';
+    }
+    else{
+        alert('login failed');
+    }
 
 
 })
