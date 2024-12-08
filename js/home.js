@@ -1,11 +1,11 @@
-document.getElementById('btn-add-money').addEventListener('click', function(event){
+document.getElementById('btn-add-money').addEventListener('click', function (event) {
     event.preventDefault();
     const addMoneyInput = document.getElementById('input-add-money').value;
     console.log(addMoneyInput);
     const addPinInput = document.getElementById('input-pin-number').value;
     console.log(addPinInput);
 
-    if(addPinInput==='1234'){
+    if (addPinInput === '1234') {
         console.log('adding money to the account')
 
         const balance = document.getElementById('acount-balance').innerText;
@@ -17,7 +17,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
         console.log(newBalance);
         document.getElementById('acount-balance').innerText = newBalance;
     }
-    else{
+    else {
         alert('faild to login');
     }
 })
